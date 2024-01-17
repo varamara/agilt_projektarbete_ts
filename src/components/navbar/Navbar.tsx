@@ -4,19 +4,22 @@ import {
   faMagnifyingGlass,
   faCartShopping,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   return (
     <section className="navbar">
       <div className="menu">
-        <a href="#">Hem</a>
-        <a href="#">Köpvillkor</a>
-        <a href="#">Storleksguide</a>
-        <a href="#">Kontakt</a>
+        <Link to="/">Hem</Link>
+        <Link to="/kopvillkor">Köpvillkor</Link>
+        <Link to="/storleksguide">Storleksguide</Link>
+        <Link to="/kontakt">Kontakt</Link>
       </div>
-      <div className="logo"><img src="src\assets\logo.png" />Konini</div>
+      <div className="logo">
+        <img src="src\assets\logo.png" />
+        Konini
+      </div>
 
-      
       <div className="search-cart">
         <form action="/sok" method="get">
           <input type="text" name="query" placeholder="Sök här..." />
@@ -26,7 +29,7 @@ const Navbar: React.FC = () => {
         </form>
 
         <button className="cart">
-          <FontAwesomeIcon icon={faCartShopping} className="cart-icon"/>
+          <FontAwesomeIcon icon={faCartShopping} className="cart-icon" />
         </button>
       </div>
     </section>
