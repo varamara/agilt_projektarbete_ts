@@ -26,4 +26,18 @@
     text-align: center;
     font-size: 1rem;
   }
+
+  .sales-txt {
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    margin-bottom: 50rem;
+    gap: 100px;
+
+    p {
+      display: flex;
+      align-items: center;
+    }
+  }
 }

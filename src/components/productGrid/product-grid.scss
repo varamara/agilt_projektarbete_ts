@@ -3,7 +3,7 @@
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
-  margin: 50px 70px;
+  margin: 130px 70px;
   place-items: center;
 
   .product-card {
@@ -75,5 +75,15 @@
         margin-top: 6px;
       }
     }
+  }
+
+  .popular-txt {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    position: absolute;
+    z-index: 100;
+    margin-bottom: 53rem;
+    text-decoration: underline;
   }
 }

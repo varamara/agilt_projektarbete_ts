@@ -14,6 +14,9 @@ const ProductGrid = () => {
 
   return (
     <div className="product-grid">
+      <div className='popular-txt'>
+            <span>Populärt just nu!</span>
+      </div>
       {productService.products.length === 0 ? (
         <p>Loading...</p>
       ) : (
