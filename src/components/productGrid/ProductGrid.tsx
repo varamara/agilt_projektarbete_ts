@@ -11,11 +11,10 @@ const ProductGrid = () => {
     productService.getAllProducts(12);
   }, [productService]);
 
-
   return (
     <div className="product-grid">
-      <div className='popular-txt'>
-            <span>Populärt just nu!</span>
+      <div className="popular-txt">
+        <span>Populärt just nu!</span>
       </div>
       {productService.products.length === 0 ? (
         <p>Loading...</p>
@@ -27,11 +26,12 @@ const ProductGrid = () => {
               <div className="product-header">
                 <h3>{product.title}</h3>
                 <h4>${product.price}</h4>
-                <FontAwesomeIcon icon={faCartShopping} className="cart-icon"/>
+                <FontAwesomeIcon icon={faCartShopping} className="cart-icon" />
               </div>
-              <p>{product.description}</p>
-              <p>Price: ${product.price}</p>
-              <p>Category: {product.category}</p>
+              <div className="product-body">
+                <p>{product.description}</p>
+                <p>Category: {product.category}</p>
+              </div>
             </div>
           </div>
         ))
