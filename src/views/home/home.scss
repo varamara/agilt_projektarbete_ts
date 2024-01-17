@@ -1,0 +1,18 @@
+.home {
+
+  .sales-txt {
+    width: max-content;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin-bottom: 50rem;
+    width: 100%;
+    padding: 0 20%;
+
+    p {
+      display: flex;
+      align-items: center;
+      font-size: 1.3rem;
+    }
+  }
+}

@@ -3,7 +3,7 @@ import "./primaryCircle.scss"
 
 const PrimaryCircle = () => {
     return (
-      <img src='src\assets\PrimaryCircle.svg' className='PrimaryCircle'></img>
+      <img src='src\assets\PrimaryCircle.svg' className='primary-circle'></img>
     )
 }
 

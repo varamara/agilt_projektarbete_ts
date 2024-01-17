@@ -1,12 +1,21 @@
 .footer {
   position: relative;
-  
+
+  .circles {
+
+    .circle_1 {
+      border-radius: 50% 50% 0 0;
+      background-color: var(--color-7);
+      height: 400px;
+      width: 500px;
+    }
+  }
+
   .footer-body {
     height: 150px;
     background-color: var(--color-7);
     display: flex;
     position: absolute;
-    z-index: -3;
     width: 100%;
     flex-direction: column;
     justify-content: center;
@@ -31,20 +40,6 @@
     p {
       text-align: center;
       font-size: 1rem;
-    }
-
-    .sales-txt {
-      width: max-content;
-      display: flex;
-      justify-content: space-between;
-      position: absolute;
-      margin-bottom: 50rem;
-      gap: 100px;
-
-      p {
-        display: flex;
-        align-items: center;
-      }
     }
   }
 }
