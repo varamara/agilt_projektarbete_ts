@@ -41,12 +41,27 @@
       transition: transform 0.3s ease-out;
       transform: translateY(70%);
 
+      .product-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+
       h3 {
         margin: -8px 0 10px -8px;
         font-size: 1rem;
        
         font-family: Arial, Helvetica, sans-serif;
         color: var(--color-4);
+      }
+
+      h4 {
+        margin: -23px 0 0 50px;
+      }
+
+      .cart-icon {
+        margin: -20px -5px 0 0;
       }
 
       p {

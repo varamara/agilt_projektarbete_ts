@@ -23,7 +23,8 @@ const ProductGrid = () => {
             <div className="product-info">
               <div className="product-header">
                 <h3>{product.title}</h3>
-                <FontAwesomeIcon icon={faCartShopping} />
+                <h4>${product.price}</h4>
+                <FontAwesomeIcon icon={faCartShopping} className="cart-icon"/>
               </div>
               <p>{product.description}</p>
               <p>Price: ${product.price}</p>
