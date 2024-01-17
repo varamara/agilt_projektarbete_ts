@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Lobster&display=swap');
+
+
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  margin: 0;
+  padding: 0;
+  
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'lato', sans-serif;
+  
+  --color-1: #000000;
+  --color-2: #ffffff;
+  --color-3: #cfcfcf;
+  --color-4: #808080;
+  --color-5: #8E76CF;
+  --color-6: #beadec;
+  --color-7: #A38FDB; 
+
+
+  --font-1: 'Lato', sans-serif;
+  --font-2: 'Lobster', sans-serif;
+}

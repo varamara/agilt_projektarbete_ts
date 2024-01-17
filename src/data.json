@@ -1,0 +1,195 @@
+[
+    {
+      "id": 1,
+      "title": "  Product 1",
+      "price": 19.99,
+      "category": "Tops",
+      "description": "A   description for Product 1",
+      "image": "https://i.imgur.com/QkIa5tT.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "  Product 2",
+      "price": 29.99,
+      "category": "Dresses",
+      "description": "A   description for Product 2",
+      "image": "https://i.imgur.com/1twoaDy.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "  Product 3",
+      "price": 39.99,
+      "category": "Pants",
+      "description": "A   description for Product 3",
+      "image": "https://i.imgur.com/cHddUCu.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "  Product 4",
+      "price": 24.99,
+      "category": "Shorts",
+      "description": "A   description for Product 4",
+      "image": "https://i.imgur.com/R2PN9Wq.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "  Product 5",
+      "price": 34.99,
+      "category": "Jumpsuits",
+      "description": "A   description for Product 5",
+      "image": "https://i.imgur.com/cSytoSD.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "  Product 6",
+      "price": 44.99,
+      "category": "Pants",
+      "description": "A   description for Product 6",
+      "image": "https://i.imgur.com/mp3rUty.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "  Product 7",
+      "price": 22.99,
+      "category": "Shorts",
+      "description": "A   description for Product 7",
+      "image": "https://i.imgur.com/9LFjwpI.jpeg"
+    },
+    {
+      "id": 8,
+      "title": "  Product 8",
+      "price": 32.99,
+      "category": "Tops",
+      "description": "A   description for Product 8",
+      "image": "https://i.imgur.com/R3iobJA.jpeg"
+    },
+    {
+      "id": 9,
+      "title": "  Product 9",
+      "price": 42.99,
+      "category": "Kimonos",
+      "description": "A   description for Product 9",
+      "image": "https://i.imgur.com/wXuQ7bm.jpeg"
+    },
+    {
+      "id": 10,
+      "title": "  Product 10",
+      "price": 27.99,
+      "category": "Blouses",
+      "description": "A   description for Product 10",
+      "image": "https://i.imgur.com/1twoaDy.jpeg"
+    },
+    {
+      "id": 11,
+      "title": "  Product 11",
+      "price": 37.99,
+      "category": "Jumpsuits",
+      "description": "A   description for Product 11",
+      "image": "https://i.imgur.com/mp3rUty.jpeg"
+    },
+    {
+      "id": 12,
+      "title": "  Product 12",
+      "price": 47.99,
+      "category": "Skirts",
+      "description": "A   description for Product 12",
+      "image": "https://i.imgur.com/R3iobJA.jpeg"
+    },
+    {
+      "id": 13,
+      "title": "  Product 1",
+      "price": 19.99,
+      "category": "Tops",
+      "description": "A   description for Product 1",
+      "image": "https://i.imgur.com/QkIa5tT.jpeg"
+    },
+    {
+      "id": 14,
+      "title": "  Product 2",
+      "price": 29.99,
+      "category": "Dresses",
+      "description": "A   description for Product 2",
+      "image": "https://i.imgur.com/1twoaDy.jpeg"
+    },
+    {
+      "id": 15,
+      "title": "  Product 3",
+      "price": 39.99,
+      "category": "Pants",
+      "description": "A   description for Product 3",
+      "image": "https://i.imgur.com/cHddUCu.jpeg"
+    },
+    {
+      "id": 16,
+      "title": "  Product 4",
+      "price": 24.99,
+      "category": "Shorts",
+      "description": "A   description for Product 4",
+      "image": "https://i.imgur.com/R2PN9Wq.jpeg"
+    },
+    {
+      "id": 17,
+      "title": "  Product 5",
+      "price": 34.99,
+      "category": "Jumpsuits",
+      "description": "A   description for Product 5",
+      "image": "https://i.imgur.com/cSytoSD.jpeg"
+    },
+    {
+      "id": 18,
+      "title": "  Product 6",
+      "price": 44.99,
+      "category": "Pants",
+      "description": "A   description for Product 6",
+      "image": "https://i.imgur.com/mp3rUty.jpeg"
+    },
+    {
+      "id": 19,
+      "title": "  Product 7",
+      "price": 22.99,
+      "category": "Shorts",
+      "description": "A   description for Product 7",
+      "image": "https://i.imgur.com/9LFjwpI.jpeg"
+    },
+    {
+      "id": 20,
+      "title": "  Product 8",
+      "price": 32.99,
+      "category": "Tops",
+      "description": "A   description for Product 8",
+      "image": "https://i.imgur.com/R3iobJA.jpeg"
+    },
+    {
+      "id": 21,
+      "title": "  Product 9",
+      "price": 42.99,
+      "category": "Kimonos",
+      "description": "A   description for Product 9",
+      "image": "https://i.imgur.com/wXuQ7bm.jpeg"
+    },
+    {
+      "id": 22,
+      "title": "  Product 10",
+      "price": 27.99,
+      "category": "Blouses",
+      "description": "A   description for Product 10",
+      "image": "https://i.imgur.com/1twoaDy.jpeg"
+    },
+    {
+      "id": 23,
+      "title": "  Product 11",
+      "price": 37.99,
+      "category": "Jumpsuits",
+      "description": "A   description for Product 11",
+      "image": "https://i.imgur.com/mp3rUty.jpeg"
+    },
+    {
+      "id": 24,
+      "title": "  Product 12",
+      "price": 47.99,
+      "category": "Skirts",
+      "description": "A   description for Product 12",
+      "image": "https://i.imgur.com/R3iobJA.jpeg"
+    }
+  ]
+  

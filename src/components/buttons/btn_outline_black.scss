@@ -1,0 +1,17 @@
+.btn_outline_black {
+    color: #000;
+    background-color: transparent;
+    border: 3px solid #A38FDB;
+    width: 154px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+
+    &:hover {
+        transform: scale(1.03); 
+        background-color: #A38FDB;
+        color: white;
+    }
+}
