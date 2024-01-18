@@ -1,8 +1,11 @@
 import React from "react"
 import "./terms.scss"
+import Navbar from "../../components/navbar/Navbar"
 
 const Terms: React.FC = () => {
     return (
+        <>
+        <Navbar navbarClassName="alt-view-navbar" />
         <section className="terms-section">
             <div className="txt-container">
                 <div>
@@ -42,6 +45,7 @@ const Terms: React.FC = () => {
                 </div>
             </aside>
         </section>
+        </>
         
     )
 }

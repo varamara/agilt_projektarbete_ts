@@ -4,9 +4,12 @@ import Hero from "../../components/hero/Hero";
 import Brands from "../../components/brands/Brands";
 import ProductGrid from "../../components/productGrid/ProductGrid";
 import Category_selection from "../../components/categorySelection/CategorySelection";
+import Navbar from "../../components/navbar/Navbar";
 
 const Home: React.FC = () => {
   return (
+    <>
+    <Navbar navbarClassName="main-view-navbar"/>
     <section className="home">
       <Hero />
       <Category_selection />
@@ -27,6 +30,7 @@ const Home: React.FC = () => {
         </p>
       </div>
     </section>
+    </>
   );
 };
 

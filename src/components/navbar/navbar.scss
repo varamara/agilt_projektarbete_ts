@@ -7,87 +7,166 @@
   align-items: center;
   justify-content: space-between;
 
-  .logo {
-    display: flex;
-    align-items: center;
-    color: var(--color-2);
-    font-family: var(--font-2);
-    font-size: 2rem;
-
-    img {
-      width: 80px;
-      margin: -18px;
-    }
-  }
-
-  //är logo i mitten
-
-  .menu {
-    a {
-      margin: 0 15px 0 0;
-      text-decoration: none;
-      color: rgb(255, 255, 255);
-      transition: 0.2s ease-in-out;
-
-      &:hover {
-        color: var(--color-5);
-      }
-
-      &:nth-child(4) {
-        margin-right: 0px;
-      }
-    }
-  }
-
-  .search-cart {
-    display: flex;
-
-    button {
-      
-      border-radius: 50px;
-      border: none;
-      margin: 5px;
-      margin-top: 12px;
-      height: 30px;
-      width: 50px;
-      background-color: var(--color-6); 
+  &.main-view-navbar {
+    .logo {
+      display: flex;
+      align-items: center;
       color: var(--color-2);
-      cursor: pointer;
-      transition: transform 0.3s ease-in-out;
+      font-family: var(--font-2);
+      font-size: 2rem;
 
-      &:hover {
-        transform: scale(1.1);
+      img {
+        width: 80px;
+        margin: -18px;
       }
-
-      //ikonerna hoppar när man hovrar
     }
 
-    
-    #search-magni {
-      margin-left: -30px;
-      padding-left: 27px;
-      width: 60px;
-      
-      .search-icon {
+    .menu {
+      a {
+        margin: 0 15px 0 0;
+        text-decoration: none;
+        color: var(--color-2);
+        transition: 0.2s ease-in-out;
+
         &:hover {
-          transform: scale(1.1); 
+          color: var(--color-5);
+        }
+
+        &:nth-child(4) {
+          margin-right: 0px;
         }
       }
-      
-      &:hover {
-        transform: none; 
+    }
+
+    .search-cart {
+      display: flex;
+
+      button {
+        border-radius: 50px;
+        border: none;
+        margin: 5px;
+        margin-top: 12px;
+        height: 30px;
+        width: 50px;
+        background-color: var(--color-6);
+        color: var(--color-2);
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      #search-magni {
+        margin-left: -30px;
+        padding-left: 27px;
+        width: 60px;
+
+        .search-icon {
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        &:hover {
+          transform: none;
+        }
+      }
+
+      form {
+        input {
+          box-shadow: -1px 0px 1px 2px rgba(0, 0, 0, 0.2);
+          padding: 15px;
+          border: none;
+          border-radius: 50px;
+          height: 30px;
+          transform: translateZ(10px);
+          transform: translateY(-1.1px);
+        }
+      }
+    }
+  }
+
+  &.alt-view-navbar {
+    .logo {
+      display: flex;
+      align-items: center;
+      color: var(--color-8);
+      font-family: var(--font-2);
+      font-size: 2rem;
+
+      img {
+        width: 80px;
+        margin: -18px;
       }
     }
 
-    form {
-      input {
-        box-shadow: -1px 0px 1px 2px rgba(0, 0, 0, 0.2);
-        padding: 15px;
-        border: none;
+    .menu {
+      a {
+        margin: 0 15px 0 0;
+        text-decoration: none;
+        color: var(--color-8);
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          color: var(--color-5);
+        }
+
+        &:nth-child(4) {
+          margin-right: 0px;
+        }
+      }
+    }
+
+    .search-cart {
+      display: flex;
+
+      button {
         border-radius: 50px;
+        border: none;
+        margin: 5px;
+        margin-top: 12px;
         height: 30px;
-        transform: translateZ(10px);
-        transform: translateY(-1.1px);
+        width: 50px;
+        background-color: var(--color-6);
+        color: var(--color-2);
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        //ikonerna hoppar när man hovrar
+      }
+
+      #search-magni {
+        margin-left: -30px;
+        padding-left: 27px;
+        width: 60px;
+
+        .search-icon {
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        &:hover {
+          transform: none;
+        }
+      }
+
+      form {
+        input {
+          box-shadow: -1px 0px 1px 2px rgba(0, 0, 0, 0.2);
+          padding: 15px;
+          border: none;
+          border-radius: 50px;
+          height: 30px;
+          transform: translateZ(10px);
+          transform: translateY(-1.1px);
+        }
       }
     }
   }

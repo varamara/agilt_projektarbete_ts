@@ -6,9 +6,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-const Navbar: React.FC = () => {
+interface NavbarProps {
+  navbarClassName: string;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ navbarClassName }) => {
   return (
-    <section className="navbar">
+    <section className= {`navbar ${navbarClassName}`}>
       <div className="menu">
         <Link to="/">Hem</Link>
         <Link to="/Terms">Köpvillkor</Link>
