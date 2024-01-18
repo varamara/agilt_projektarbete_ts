@@ -12,13 +12,12 @@ interface Product {
 const ProductService = () => {
   const [products, setProducts] = useState<Product[]>([]);
 
-  const getAllProducts = async (limit: number) => {
+  const getAllProducts = async () => {
     try {
       const response = await fetch("src/data.json");
       const data = await response.json();
 
-      const limitedProducts = data.slice(0, limit);
-      setProducts(limitedProducts);
+      setProducts(data);
     } catch (error) {
       console.error("Could not fetch products", error);
     }
