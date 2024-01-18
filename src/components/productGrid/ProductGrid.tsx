@@ -3,41 +3,42 @@ import "./product-grid.scss";
 import ProductService from "../../services/ProductService";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const ProductGrid = () => {
   const productService = ProductService();
 
   useEffect(() => {
-    productService.getAllProducts(12);
+    productService.getAllProducts();
   }, [productService]);
 
   return (
-    <section className="products"> 
-    <span>Populärt just nu!</span>
+    <section className="products">
+      <span>Populärt just nu!</span>
       <div className="product-grid">
-       
-
         {productService.products.length === 0 ? (
           <p>Loading...</p>
         ) : (
-          productService.products.map((product) => (
-            <div key={product.id} className="product-card">
-              <img src={product.image} alt={product.title} />
-              <div className="product-info">
-                <div className="product-header">
-                  <h3>{product.title}</h3>
-                  <h4>${product.price}</h4>
-                  <FontAwesomeIcon
-                    icon={faCartShopping}
-                    className="cart-icon"
-                  />
-                </div>
-                <div className="product-body">
-                  <p>{product.description}</p>
-                  <p>Category: {product.category}</p>
+          productService.products.slice(0, 10).map((product) => (
+            <Link to="/products" key={product.id} className="product-card-link">
+              <div key={product.id} className="product-card">
+                <img src={product.image} alt={product.title} />
+                <div className="product-info">
+                  <div className="product-header">
+                    <h3>{product.title}</h3>
+                    <h4>${product.price}</h4>
+                    <FontAwesomeIcon
+                      icon={faCartShopping}
+                      className="cart-icon"
+                    />
+                  </div>
+                  <div className="product-body">
+                    <p>{product.description}</p>
+                    <p>Category: {product.category}</p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))
         )}
       </div>

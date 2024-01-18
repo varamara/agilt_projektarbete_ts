@@ -4,6 +4,8 @@ import TextBlock from '../../components/termsComponents/TextBlock';
 
 const Terms: React.FC = () => {
     return (
+        <>
+        <Navbar navbarClassName="alt-view-navbar" />
         <section className="terms-section">
             <div className="section-one">
                 <h1 className="terms-header">
@@ -117,6 +119,7 @@ const Terms: React.FC = () => {
                 </div>
             </div>
         </section>
+        </>
         
     )
 }

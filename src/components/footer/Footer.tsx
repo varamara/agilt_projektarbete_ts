@@ -4,7 +4,8 @@ const Footer = () => {
   return (
     <section className="footer">
       <div className="circles">
-        {/* <div className="circle_1"></div> */}
+        <div className="circle-1"></div>
+        <div className="circle-2"></div>
       </div>
       <div className="footer-body">
         <div className="icons">
