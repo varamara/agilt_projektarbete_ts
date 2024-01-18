@@ -31,18 +31,13 @@ const Terms: React.FC = () => {
                     göra en beställning hos oss godkänner du våra köp & leveransvillkor.
                     Har du gjort en beställning av misstag ber vi att du kontaktar oss så 
                     fort som möjligt."/>
-                    <span className="minor-headline">Beställning</span>
+                    <span className="minor-headline">Priser</span>
                     <TextBlock text="
-                    Din beställning är bindande. Genom att 
-                    göra en beställning hos oss godkänner du våra köp & leveransvillkor.
-                    Har du gjort en beställning av misstag ber vi att du kontaktar oss så 
-                    fort som möjligt."/>
-                    <span className="minor-headline">Beställning</span>
+                    Alla priser anges inklusive svensk moms. Eventuella erbjudanden gäller så långt lagret räcker om inte annat anges. ."/>
+                    <span className="minor-headline">Betalning</span>
                     <TextBlock text="
-                    Din beställning är bindande. Genom att 
-                    göra en beställning hos oss godkänner du våra köp & leveransvillkor.
-                    Har du gjort en beställning av misstag ber vi att du kontaktar oss så 
-                    fort som möjligt."/>
+                    Vi erbjuder betalning via Klarna - Kort, Faktura, Delbetalning, Internetbank.
+"/>
                 </div>
             </div>
             <div className="section-two">
@@ -98,10 +93,6 @@ const Terms: React.FC = () => {
                 </div>
             </div>
             <div className="section-four">
-                <aside className="design-components">
-                    <div className="circle4">
-                    </div>
-                </aside>
                 <div className="txt-container4">
                     <span className="minor-headline">Reklamationer</span>
                     <TextBlock text="
