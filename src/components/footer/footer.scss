@@ -1,13 +1,27 @@
 .footer {
+  margin-top: 20%;
   position: relative;
 
   .circles {
 
-    .circle_1 {
+    .circle-1 {
       border-radius: 50% 50% 0 0;
+      background-color: var(--color-5);
+      height: 250px;
+      width: 250px;
+      position: absolute;
+      bottom: -120px;
+      left: 170px;
+    }
+
+    .circle-2 {
+      border-radius: 60% 200% 40% 0;
       background-color: var(--color-7);
-      height: 400px;
+      height: 390px;
       width: 500px;
+      position: absolute;
+      bottom: -100px;
+      left: -200px;
     }
   }
 
@@ -20,7 +34,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 500px;
 
     .icons {
       display: flex;
