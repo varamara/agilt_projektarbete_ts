@@ -7,6 +7,8 @@ const Size: React.FC = () => {
     <>
     <Navbar navbarClassName="alt-view-navbar" />
     <section className="size-section">
+      <div className="circle-container">
+      <div className="size-circle"></div></div>
       <h1>
         Storleksguide
       </h1>
@@ -66,6 +68,7 @@ const Size: React.FC = () => {
           
         </tbody>
       </table>
+      
     </div>
     </section>
     </>
