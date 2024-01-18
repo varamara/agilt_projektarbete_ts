@@ -11,10 +11,7 @@ const Contact: React.FC = () => {
       <Layout>
         <section className="contact-section">
           <div className="map">
-            <iframe
-              className="google-map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.966377314961!2d139.5788815!3d35.702445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ef7d8863d2a9%3A0x88748c947c561c9e!2sCapy%20Neko%20Cafe%20Kichijoji!5e0!3m2!1ssv!2sse!4v1705573829378!5m2!1ssv!2sse"
-            ></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7158.527878401031!2d13.17886003609608!3d63.34932522732079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466e732cb2d89ae3%3A0x4039571959f4e9fe!2zODM3IDUyIFPDpWLDtmxl!5e0!3m2!1ssv!2sse!4v1705582722279!5m2!1ssv!2sse"></iframe>
           </div>
           <div className="form-container">
             <ContactForm />

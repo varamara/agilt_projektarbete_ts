@@ -22,9 +22,11 @@ const ContactForm: React.FC = () => {
   return (
     <section className="contact-form-section">
       <div className="contact-form-container">
+        <div className="form-content">
         <h1>Kontakt</h1>
+
         <form className="contact-form" onSubmit={formik.handleSubmit}>
-          <div>
+          <div className="input-group">
             <label htmlFor="name">Namn:</label>
             <input
               type="text"
@@ -34,8 +36,7 @@ const ContactForm: React.FC = () => {
               value={formik.values.name}
             />
           </div>
-
-          <div>
+          <div className="input-group">
             <label htmlFor="email">E-post:</label>
             <input
               type="email"
@@ -46,7 +47,7 @@ const ContactForm: React.FC = () => {
             />
           </div>
 
-          <div>
+          <div className="input-group">
             <label htmlFor="message">Meddelande:</label>
             <textarea
               id="message"
@@ -57,7 +58,17 @@ const ContactForm: React.FC = () => {
           </div>
 
           <button type="submit">Skicka</button>
-        </form>
+          
+        </form></div>
+        <div className="side-container">
+          <h3>info</h3>
+          <p>Konini Agenturer AB <br />
+          Myggvägen 11 <br />
+          136 75 Vendelsö <br />
+          Org. nr.: 556989-6292</p>
+          
+        </div>
+
       </div>
     </section>
   );
