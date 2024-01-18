@@ -1,8 +1,11 @@
 import React from "react";
 import "./size.scss"
+import Navbar from "../../components/navbar/Navbar"
 
 const Size: React.FC = () => {
   return (
+    <>
+    <Navbar navbarClassName="alt-view-navbar" />
     <section className="size-section">
       <h1>
         Storleksguide
@@ -65,6 +68,7 @@ const Size: React.FC = () => {
       </table>
     </div>
     </section>
+    </>
   )
 }
 
