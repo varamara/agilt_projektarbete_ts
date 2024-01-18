@@ -1,57 +1,109 @@
 .terms-section {
     display: flex;
+    flex-direction: column;
+    height: 2800px;
 
-
-    .terms-header {
-        font-family: var(--font-2);
-        font-weight: normal;
-        font-size: 64px;
-        color: black;
-        margin-left: 11rem;
-        margin-top: 12rem;
-    }
-
-    .terms-txt {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        width: 700px;
-        margin: 5rem 13rem 0 11rem;
-        line-height: 30px;
-
-        .minor-headline {
-            text-decoration: underline;
-        }
-    }
-
-    
 
     .design-components {
         display: flex;
+    }
+
+
+    .section-one {
+
+        .terms-header {
+            font-family: var(--font-2);
+            font-weight: normal;
+            font-size: 64px;
+            color: black;
+            margin-left: 11rem;
+            margin-top: 12rem;
+        }
 
         .cirle {
+            position: absolute;
+            left: 75rem;
+            top: 14rem;
             background-color: var(--color-7);
-            width: 920px;
-            height: 920px;
+            width: 720px;
+            height: 720px;
             border-radius: 50%;
-            margin-left: 2rem;
-            margin-top: 7rem;
         }
 
         .documents {
             position: absolute;
-            margin-right: 2rem;
+            right: 3rem;
 
             .doc-img {
-                height: 900px;
-                margin-left: -20rem;
+                height: 700px;
+                margin-left: -17rem;
                 margin-top: 4rem;
             }
         }
+    }
 
+    .circle2 {
+        position: absolute;
+        left: -7rem;
+        bottom: -40rem;
+        background-color: var(--color-7);
+        width: 720px;
+        height: 720px;
+        border-radius: 50%;
 
     }
 
-    
+
+    .section-three {
+        margin-top: 15rem;
+        
+        
+        
+        .circle3 {
+            position: absolute;
+            background-color: var(--color-7);
+            width: 720px;
+            height: 720px;
+            border-radius: 50%;
+            left: 75rem;
+            margin-top: -2rem;
+        }
+
+        .secondary-circle {
+            position: absolute;
+            background-color: var(--color-5);
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            margin-left: 95rem;
+            margin-top: -10rem;
+            z-index: -1;
+        }
+    }
+
+    .section-four {
+        margin-top: 14rem;
+        
+        .circle4 {
+            position: absolute;
+            background-color: var(--color-7);
+            width: 720px;
+            height: 720px;
+            border-radius: 50%;
+            left: -6rem;
+            margin-top: -2rem;
+        }
+
+        .txt-container4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            gap: 60px;
+            width: 700px;
+            margin-left: 60rem;
+            margin-top: 5rem;
+            line-height: 30px;
+        }
+    }
     
 }

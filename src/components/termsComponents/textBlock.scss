@@ -1,0 +1,28 @@
+
+.txt-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 700px;
+    margin: 3rem 13rem 0 11rem;
+    line-height: 30px;
+}
+
+.minor-headline {
+    text-decoration: underline;
+    margin-bottom: -4rem;
+}
+
+.txt-container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 60px;
+    width: 700px;
+    margin-left: 60rem;
+    margin-top: 13rem;
+    line-height: 30px;
+}
+
+
+
