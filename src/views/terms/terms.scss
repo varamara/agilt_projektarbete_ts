@@ -1,0 +1,57 @@
+.terms-section {
+    display: flex;
+
+
+    .terms-header {
+        font-family: var(--font-2);
+        font-weight: normal;
+        font-size: 64px;
+        color: black;
+        margin-left: 11rem;
+        margin-top: 12rem;
+    }
+
+    .terms-txt {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 700px;
+        margin: 5rem 13rem 0 11rem;
+        line-height: 30px;
+
+        .minor-headline {
+            text-decoration: underline;
+        }
+    }
+
+    
+
+    .design-components {
+        display: flex;
+
+        .cirle {
+            background-color: var(--color-7);
+            width: 920px;
+            height: 920px;
+            border-radius: 50%;
+            margin-left: 2rem;
+            margin-top: 7rem;
+        }
+
+        .documents {
+            position: absolute;
+            margin-right: 2rem;
+
+            .doc-img {
+                height: 900px;
+                margin-left: -20rem;
+                margin-top: 4rem;
+            }
+        }
+
+
+    }
+
+    
+    
+}
