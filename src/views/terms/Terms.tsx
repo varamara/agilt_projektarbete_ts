@@ -1,6 +1,7 @@
 import React from "react"
 import "./terms.scss"
 import TextBlock from '../../components/termsComponents/TextBlock';
+import Navbar from "../../components/navbar/Navbar"
 
 const Terms: React.FC = () => {
     return (
