@@ -18,6 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({ navbarClassName }) => {
         <Link to="/Terms">Köpvillkor</Link>
         <Link to="/Size">Storleksguide</Link>
         <Link to="/Contact">Kontakt</Link>
+        <Link to="/Products">Produkter</Link>
       </div>
       <div className="logo">
         <img src="src\assets\logo.png" />

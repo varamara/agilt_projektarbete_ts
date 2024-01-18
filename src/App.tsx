@@ -4,6 +4,7 @@ import Contact from "./views/contact/Contact";
 import Terms from "./views/terms/Terms";
 import Footer from "./components/footer/Footer";
 import Size from "./views/size/Size";
+import Products from "./views/products/Products";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/size" element={<Size />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/products" element={<Products />} />
         </Routes>
       </Router>
       <Footer />
