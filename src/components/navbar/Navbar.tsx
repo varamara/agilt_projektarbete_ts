@@ -12,8 +12,8 @@ const Navbar: React.FC = () => {
       <div className="menu">
         <Link to="/">Hem</Link>
         <Link to="/Terms">Köpvillkor</Link>
-        <Link to="/storleksguide">Storleksguide</Link>
-        <Link to="/kontakt">Kontakt</Link>
+        <Link to="/Size">Storleksguide</Link>
+        <Link to="/Contact">Kontakt</Link>
       </div>
       <div className="logo">
         <img src="src\assets\logo.png" />
