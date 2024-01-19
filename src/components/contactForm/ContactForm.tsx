@@ -56,8 +56,8 @@ const ContactForm: React.FC = () => {
               value={formik.values.message}
             />
           </div>
-
-          <button type="submit">Skicka</button>
+          
+          <button className="form-button" type="submit">Skicka</button>
           
         </form></div>
         <div className="side-container">
