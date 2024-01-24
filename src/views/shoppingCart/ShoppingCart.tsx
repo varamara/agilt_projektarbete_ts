@@ -61,6 +61,10 @@ const ShoppingCart: React.FC = () => {
 
                 <SecondaryBtn className="secondary-btn">Betala</SecondaryBtn>
             </div>
+            <div className="continue-shopping">
+                <img src="src\assets\go-back.svg" alt="" />
+                <a href="#"><p>Fortsätt Handla</p></a>
+            </div>
             <div className="product-info">
 
             </div>
