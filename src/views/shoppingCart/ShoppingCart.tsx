@@ -43,6 +43,21 @@ const ShoppingCart: React.FC = () => {
                     </div>
                     
                 </form>
+                <div className="sum-info">
+                    <div className="sum">
+                        <p>Summa:</p>
+                        <p>1596,00 Kr</p>
+                    </div>
+                    <div className="shipping">
+                        <p>Frakt:</p>
+                        <p>49,00 Kr</p>
+                    </div>
+                    <div className="total">
+                        <p>Totalsumma &#40;inkl. moms&#41;:</p>
+                        <p>1645,00 Kr</p>
+                    </div>
+                </div>
+                
 
                 <SecondaryBtn className="secondary-btn">Betala</SecondaryBtn>
             </div>
