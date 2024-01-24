@@ -5,6 +5,7 @@ import Terms from "./views/terms/Terms";
 import Footer from "./components/footer/Footer";
 import Size from "./views/size/Size";
 import Products from "./views/products/Products";
+import ShoppingCart from "./views/shoppingCart/ShoppingCart";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/size" element={<Size />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/ShoppingCart" element={<ShoppingCart />} />
         </Routes>
       </Router>
       <Footer />

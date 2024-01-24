@@ -33,9 +33,11 @@ const Navbar: React.FC<NavbarProps> = ({ navbarClassName }) => {
           </button>
         </form>
 
-        <button className="cart">
-          <FontAwesomeIcon icon={faCartShopping} className="cart-icon" />
-        </button>
+        <Link to="/ShoppingCart">
+          <button className="cart">
+            <FontAwesomeIcon icon={faCartShopping} className="cart-icon" />
+          </button>
+        </Link>
       </div>
     </section>
   );
