@@ -1,22 +1,22 @@
+// Blouses.tsx
 import React, { useEffect, useState } from "react";
-import "./dresses.scss";
+import "./blouses.scss";
 import "../../components/productGrid/product-grid.scss";
+import Layout from "../../components/layoutComponent/Layout";
+import Navbar from "../../components/navbar/Navbar";
 import ProductService from "../../services/ProductService";
 import ProductGrid from "../../components/productGrid/ProductGrid";
 import { Product } from "../../types";
-import Products from "../products/Products";
 
-const Dresses: React.FC = () => {
-  const [dresses, setDresses] = useState<Product[]>([]);
+const Blouses: React.FC = () => {
+  const [blouses, setBlouses] = useState<Product[]>([]);
   const productService = ProductService();
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         const data = await productService.getAllProducts();
-        setDresses(
-          data.filter((product: Product) => product.category === "Dresses")
-        );
+        setBlouses(data.filter((product: Product) => product.category === "Blouses"));
       } catch (error) {
         console.error("Error fetching products:", error);
       }
@@ -25,13 +25,14 @@ const Dresses: React.FC = () => {
   }, [productService]);
 
   return (
-    <Products>
-      <section className="category-products">
-        <h3 className="category-title">Klänningar</h3>
-        <ProductGrid products={dresses} />
+    <Layout>
+      <Navbar navbarClassName="alt-view-navbar" />
+      <section className="category-blouses products">
+        <h3>Blusar</h3>
+        <ProductGrid products={blouses} />
       </section>
-    </Products>
+    </Layout>
   );
 };
 
-export default Dresses;
+export default Blouses;

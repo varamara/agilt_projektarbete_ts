@@ -1,22 +1,21 @@
+// Skirts
 import React, { useEffect, useState } from "react";
-import "./dresses.scss";
 import "../../components/productGrid/product-grid.scss";
+import Layout from "../../components/layoutComponent/Layout";
+import Navbar from "../../components/navbar/Navbar";
 import ProductService from "../../services/ProductService";
 import ProductGrid from "../../components/productGrid/ProductGrid";
 import { Product } from "../../types";
-import Products from "../products/Products";
 
-const Dresses: React.FC = () => {
-  const [dresses, setDresses] = useState<Product[]>([]);
+const Skirts: React.FC = () => {
+  const [skirts, setSkirts] = useState<Product[]>([]);
   const productService = ProductService();
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         const data = await productService.getAllProducts();
-        setDresses(
-          data.filter((product: Product) => product.category === "Dresses")
-        );
+        setSkirts(data.filter((product: Product) => product.category === "Skirts"));
       } catch (error) {
         console.error("Error fetching products:", error);
       }
@@ -25,13 +24,14 @@ const Dresses: React.FC = () => {
   }, [productService]);
 
   return (
-    <Products>
-      <section className="category-products">
-        <h3 className="category-title">Klänningar</h3>
-        <ProductGrid products={dresses} />
+    <Layout>
+      <Navbar navbarClassName="alt-view-navbar" />
+      <section className="category-skirts-products">
+        <h3>Kjolar</h3>
+        <ProductGrid products={skirts} />
       </section>
-    </Products>
+    </Layout>
   );
 };
 
-export default Dresses;
+export default Skirts;
