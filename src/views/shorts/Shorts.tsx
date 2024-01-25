@@ -1,6 +1,5 @@
-// Dresses.tsx
+// Shorts
 import React, { useEffect, useState } from "react";
-import "./dresses.scss";
 import "../../components/productGrid/product-grid.scss";
 import Layout from "../../components/layoutComponent/Layout";
 import Navbar from "../../components/navbar/Navbar";
@@ -8,15 +7,15 @@ import ProductService from "../../services/ProductService";
 import ProductGrid from "../../components/productGrid/ProductGrid";
 import { Product } from "../../types";
 
-const Dresses: React.FC = () => {
-  const [dresses, setDresses] = useState<Product[]>([]);
+const Shorts: React.FC = () => {
+  const [shorts, setShorts] = useState<Product[]>([]);
   const productService = ProductService();
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         const data = await productService.getAllProducts();
-        setDresses(data.filter((product: Product) => product.category === "Dresses"));
+        setShorts(data.filter((product: Product) => product.category === "Shorts"));
       } catch (error) {
         console.error("Error fetching products:", error);
       }
@@ -27,12 +26,12 @@ const Dresses: React.FC = () => {
   return (
     <Layout>
       <Navbar navbarClassName="alt-view-navbar" />
-      <section className="category-products">
-        <h3 className="category-title">Klänningar</h3>
-        <ProductGrid products={dresses} />
+      <section className="category-shorts-products">
+        <h3>Shorts</h3>
+        <ProductGrid products={shorts} />
       </section>
     </Layout>
   );
 };
 
-export default Dresses;
+export default Shorts;
