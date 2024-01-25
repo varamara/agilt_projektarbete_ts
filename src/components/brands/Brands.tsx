@@ -5,7 +5,7 @@ const Brands: React.FC = () => {
     return (
     <div className='container'>
         <div>
-        <img src="src\assets\images\hm.png" />
+        <img src="src\assets\images\FrankDandy.png" />
         </div>
         <div>
             <img src="src\assets\images\modstrom.png" alt="" />
@@ -17,7 +17,7 @@ const Brands: React.FC = () => {
             <img src="src\assets\images\oddmolly.png" alt="" />
         </div>
         <div>
-            <img src="src\assets\images\FrankDandy.png" alt="" />
+            <img src="src\assets\images\OrionLondon.jpg" alt="" />
         </div>
         <div>
             <img src="src\assets\images\FrankDandy.png" alt="" />
