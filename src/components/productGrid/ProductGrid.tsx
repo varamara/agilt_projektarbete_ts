@@ -1,25 +1,23 @@
-import { useEffect } from "react";
+import React from "react";
 import "./product-grid.scss";
-import ProductService from "../../services/ProductService";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { Product } from "../../types";
 
-const ProductGrid = () => {
-  const productService = ProductService();
+interface ProductGridProps {
+  products: Product[];
+}
 
-  useEffect(() => {
-    productService.getAllProducts();
-  }, [productService]);
-
+const ProductGrid: React.FC<ProductGridProps> = ({ products }) => {
   return (
     <section className="products">
       <span>Populärt just nu!</span>
       <div className="product-grid">
-        {productService.products.length === 0 ? (
+        {products.length === 0 ? (
           <p>Loading...</p>
         ) : (
-          productService.products.slice(0, 10).map((product) => (
+          products.slice(0, 10).map((product) => (
             <Link to="/products" key={product.id} className="product-card-link">
               <div key={product.id} className="product-card">
                 <img src={product.image} alt={product.title} />

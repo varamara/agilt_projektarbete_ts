@@ -1,13 +1,5 @@
 import { useState } from "react";
-
-interface Product {
-  id: number;
-  title: string;
-  price: number;
-  category: string;
-  description: string;
-  image: string;
-}
+import { Product } from "../types";
 
 const ProductService = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -18,13 +10,20 @@ const ProductService = () => {
       const data = await response.json();
 
       setProducts(data);
+      return data;
     } catch (error) {
       console.error("Could not fetch products", error);
     }
   };
 
+  const getProductsByCategory = (category: string): Product[] => {
+      return products.filter((product) => product.category === category);
+
+  };
+
   return {
     getAllProducts,
+    getProductsByCategory,
     products,
   };
 };
