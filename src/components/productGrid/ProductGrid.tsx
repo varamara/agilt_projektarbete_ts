@@ -12,7 +12,7 @@ interface ProductGridProps {
 const ProductGrid: React.FC<ProductGridProps> = ({ products }) => {
   return (
     <section className="products">
-      <span>Populärt just nu!</span>
+      <span> Populärt just nu </span>
       <div className="product-grid">
         {products.length === 0 ? (
           <p>Loading...</p>
