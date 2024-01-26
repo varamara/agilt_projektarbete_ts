@@ -1,11 +1,10 @@
 // Pants
 import React, { useEffect, useState } from "react";
 import "../../components/productGrid/product-grid.scss";
-import Layout from "../../components/layoutComponent/Layout";
-import Navbar from "../../components/navbar/Navbar";
 import ProductService from "../../services/ProductService";
 import ProductGrid from "../../components/productGrid/ProductGrid";
 import { Product } from "../../types";
+import Products from "../products/Products";
 
 const Pants: React.FC = () => {
   const [pants, setPants] = useState<Product[]>([]);
@@ -24,13 +23,11 @@ const Pants: React.FC = () => {
   }, [productService]);
 
   return (
-    <Layout>
-      <Navbar navbarClassName="alt-view-navbar" />
+    <Products title="Byxor">
       <section className="category-pants-products">
-        <h3>Byxor</h3>
         <ProductGrid products={pants} />
       </section>
-    </Layout>
+    </Products>
   );
 };
 

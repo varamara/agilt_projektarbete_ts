@@ -1,11 +1,10 @@
 // Kimonos
 import React, { useEffect, useState } from "react";
 import "../../components/productGrid/product-grid.scss";
-import Layout from "../../components/layoutComponent/Layout";
-import Navbar from "../../components/navbar/Navbar";
 import ProductService from "../../services/ProductService";
 import ProductGrid from "../../components/productGrid/ProductGrid";
 import { Product } from "../../types";
+import Products from "../products/Products";
 
 const Kimonos: React.FC = () => {
   const [kimonos, setKimonos] = useState<Product[]>([]);
@@ -24,13 +23,11 @@ const Kimonos: React.FC = () => {
   }, [productService]);
 
   return (
-    <Layout>
-      <Navbar navbarClassName="alt-view-navbar" />
+    <Products title="Kimonos">
       <section className="category-kimonos-products">
-        <h3>Kimonos</h3>
         <ProductGrid products={kimonos} />
       </section>
-    </Layout>
+    </Products>
   );
 };
 

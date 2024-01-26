@@ -1,11 +1,10 @@
 // Tops.tsx
 import React, { useEffect, useState } from "react";
 import "../../components/productGrid/product-grid.scss";
-import Layout from "../../components/layoutComponent/Layout";
-import Navbar from "../../components/navbar/Navbar";
 import ProductService from "../../services/ProductService";
 import ProductGrid from "../../components/productGrid/ProductGrid";
 import { Product } from "../../types";
+import Products from "../products/Products";
 
 const Tops: React.FC = () => {
   const [tops, setTops] = useState<Product[]>([]);
@@ -24,13 +23,11 @@ const Tops: React.FC = () => {
   }, [productService]);
 
   return (
-    <Layout>
-      <Navbar navbarClassName="alt-view-navbar" />
-      <section className="category-tops-products">
-        <h3>Toppar</h3>
+    <Products title="Toppar">
+      <section>
         <ProductGrid products={tops} />
       </section>
-    </Layout>
+    </Products>
   );
 };
 

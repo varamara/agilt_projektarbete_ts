@@ -1,11 +1,10 @@
 // Skirts
 import React, { useEffect, useState } from "react";
 import "../../components/productGrid/product-grid.scss";
-import Layout from "../../components/layoutComponent/Layout";
-import Navbar from "../../components/navbar/Navbar";
 import ProductService from "../../services/ProductService";
 import ProductGrid from "../../components/productGrid/ProductGrid";
 import { Product } from "../../types";
+import Products from "../products/Products";
 
 const Skirts: React.FC = () => {
   const [skirts, setSkirts] = useState<Product[]>([]);
@@ -24,13 +23,11 @@ const Skirts: React.FC = () => {
   }, [productService]);
 
   return (
-    <Layout>
-      <Navbar navbarClassName="alt-view-navbar" />
-      <section className="category-skirts-products">
-        <h3>Kjolar</h3>
+    <Products title="Kjolar">
+      <section>
         <ProductGrid products={skirts} />
       </section>
-    </Layout>
+    </Products>
   );
 };
 
