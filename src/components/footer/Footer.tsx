@@ -10,13 +10,13 @@ const Footer = () => {
       <div className="footer-body">
         <div className="icons">
           <a href="https://www.google.com/intl/sv/gmail/about/">
-            <img src="src\assets\at.png" />
+            <img src="src\assets\at.png" title="at-symbol"/>
           </a>
           <a href="https://www.facebook.com/">
-            <img src="src\assets\fb.png" />
+            <img src="src\assets\fb.png" title="fb"/>
           </a>
           <a href="https://www.instagram.com/">
-            <img src="src\assets\ig.png" />
+            <img src="src\assets\ig.png" title="ig"/>
           </a>
         </div>
         <p>&copy; Konini 2024 </p>

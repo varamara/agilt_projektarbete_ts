@@ -21,20 +21,20 @@ const Navbar: React.FC<NavbarProps> = ({ navbarClassName }) => {
         <Link to="/Products">Produkter</Link>
       </div>
       <div className="logo">
-        <img src="src\assets\logo.png" />
+        <img src="src\assets\logo.png" title="logo"/>
         Konini
       </div>
 
       <div className="search-cart">
         <form action="/sok" method="get">
           <input type="text" name="query" placeholder="Sök här..." />
-          <button id="search-magni" type="submit">
+          <button id="search-magni" type="submit" title="search">
             <FontAwesomeIcon icon={faMagnifyingGlass} className="search-icon" />
           </button>
         </form>
 
         <Link to="/ShoppingCart">
-          <button className="cart">
+          <button className="cart" title="cart">
             <FontAwesomeIcon icon={faCartShopping} className="cart-icon" />
           </button>
         </Link>
