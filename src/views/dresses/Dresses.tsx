@@ -25,11 +25,8 @@ const Dresses: React.FC = () => {
   }, [productService]);
 
   return (
-    <Products>
-      <section className="category-products">
-        <h3 className="category-title">Klänningar</h3>
+    <Products title="Klänningar">
         <ProductGrid products={dresses} />
-      </section>
     </Products>
   );
 };

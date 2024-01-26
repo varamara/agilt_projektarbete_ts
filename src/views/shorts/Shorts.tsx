@@ -1,11 +1,10 @@
 // Shorts
 import React, { useEffect, useState } from "react";
 import "../../components/productGrid/product-grid.scss";
-import Layout from "../../components/layoutComponent/Layout";
-import Navbar from "../../components/navbar/Navbar";
 import ProductService from "../../services/ProductService";
 import ProductGrid from "../../components/productGrid/ProductGrid";
 import { Product } from "../../types";
+import Products from "../products/Products";
 
 const Shorts: React.FC = () => {
   const [shorts, setShorts] = useState<Product[]>([]);
@@ -24,13 +23,11 @@ const Shorts: React.FC = () => {
   }, [productService]);
 
   return (
-    <Layout>
-      <Navbar navbarClassName="alt-view-navbar" />
-      <section className="category-shorts-products">
-        <h3>Shorts</h3>
+    <Products title="Shorts">
+      <section>
         <ProductGrid products={shorts} />
       </section>
-    </Layout>
+    </Products>
   );
 };
 

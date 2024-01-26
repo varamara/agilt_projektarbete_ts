@@ -1,19 +1,26 @@
+import CategorySelection from "../../components/categorySelection/CategorySelection";
 import Layout from "../../components/layoutComponent/Layout";
 import Navbar from "../../components/navbar/Navbar";
 import { ReactNode } from "react";
+import "./products.scss";
 
 interface ProductViewProps {
   children?: ReactNode;
+  title: string;
 }
 
-const Products = ({ children }: ProductViewProps) => (
+const Products = ({ children, title }: ProductViewProps) => (
   <>
     <Navbar navbarClassName="alt-view-navbar" />
     <Layout>
-      <h1>hej</h1>
-      <div className="container">
+      <CategorySelection />
+      <section className="products-container">
+        <div className="circle-container">
+          <div className="size-circle"></div>
+        </div>
+        <h1>{title}</h1>
         {children}
-      </div>
+      </section>
     </Layout>
   </>
 );
