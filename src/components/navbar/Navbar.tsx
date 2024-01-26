@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
   faCartShopping,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
@@ -14,6 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({ navbarClassName }) => {
   return (
     <section className= {`navbar ${navbarClassName}`}>
       <div className="menu">
+        <button className="menu-burger"><FontAwesomeIcon icon={faBars} style={{color: "#ffffff",}} /></button>
         <Link to="/">Hem</Link>
         <Link to="/Terms">Köpvillkor</Link>
         <Link to="/Size">Storleksguide</Link>
@@ -22,7 +24,7 @@ const Navbar: React.FC<NavbarProps> = ({ navbarClassName }) => {
       </div>
       <div className="logo">
         <img src="src\assets\logo.png" title="logo"/>
-        Konini
+        <h1>Konini</h1>
       </div>
 
       <div className="search-cart">
