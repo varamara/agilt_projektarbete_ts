@@ -1,7 +1,28 @@
-import React from "react"
+import React, { useState } from "react"
 import "./product-cart.scss"
+import { useShoppingCart } from '../productCart/ProductCartContext';
+
 
 const ProductCart: React.FC = () => {
+    const { cartCount, totalCost, updateCartCount } = useShoppingCart();
+
+    const increaseCartCount = () => {
+        updateCartCount(cartCount + 1);
+    };
+
+    const decreaseCartCount = () => {
+        if (cartCount > 1) {
+            updateCartCount(cartCount - 1);
+        }
+    };
+
+    const [cartItems, setCartItems] = useState<string[]>(['Product 1']); // Exempel på varor i kundvagnen
+
+    const removeFromCart = (item: string) => {
+        const updatedCart = cartItems.filter(cartItem => cartItem !== item);
+        setCartItems(updatedCart);
+    };
+
     return (
         <>
         <section className="shopping-cart">
@@ -12,7 +33,8 @@ const ProductCart: React.FC = () => {
             </div>
             <div className="product-info">
                 <h2>Kundvagn</h2>
-                <div className="product-details">
+                {cartItems.map((item, index) => (
+                <div className="product-details"  key={index}>
                     <img className="prod-img" src="src\assets\images\nyhero.jpg" alt="product image" />
                     <a className="prod-name" href="#">
                         <p >
@@ -20,15 +42,19 @@ const ProductCart: React.FC = () => {
                             <span className="prod-num">#produktnummer</span>
                         </p>
                     </a>
-                    <img className="add-sub" src="src\assets\add.svg" alt="add-icon" />
-                    <span className="quantity">2</span>
-                    <img className="add-sub" src="src\assets\subtract.svg" alt="subtract-icon" />
+                    <img className="add-sub" src="src\assets\add.svg" alt="add-icon"  onClick={increaseCartCount} />
+                    <span className="quantity">{cartCount}</span>
+                    <img className="add-sub" src="src\assets\subtract.svg" alt="subtract-icon"  onClick={decreaseCartCount}/>
                     <span className="product-cost">
-                        <p>399.00 Kr</p>
+                        <p>{totalCost} Kr</p>
                     </span>
-                    <img className="trash-bin" src="src\assets\trash-bin.svg" alt="trash-icon" />
+                    
+                    
+                    <img onClick={() => removeFromCart(item)} className="trash-bin" src="src\assets\trash-bin.svg" alt="trash-icon" />
+                
+                    
                 </div>
-
+                ))}
                 <img className="prod-separator" src="src\assets\prod-separator.svg" alt="product-separator" />
                 
                 

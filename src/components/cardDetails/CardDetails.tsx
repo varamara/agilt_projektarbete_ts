@@ -1,8 +1,11 @@
 import React from "react"
 import "./card-details.scss"
 import SecondaryBtn from "../../components/buttons/SecondaryBtn"
+import {useShoppingCart} from '../productCart/ProductCartContext'
 
 const CardDetails: React.FC = () => {
+    const { totalCost } = useShoppingCart();
+
     return (
         <>
         <section className="shopping">
@@ -44,7 +47,7 @@ const CardDetails: React.FC = () => {
                 <div className="sum-info">
                     <div className="sum">
                         <p>Summa:</p>
-                        <p>1596,00 Kr</p>
+                        <p>{totalCost} Kr</p>
                     </div>
                     <div className="shipping">
                         <p>Frakt:</p>
@@ -52,7 +55,7 @@ const CardDetails: React.FC = () => {
                     </div>
                     <div className="total">
                         <p>Totalsumma &#40;inkl. moms&#41;:</p>
-                        <p>1645,00 Kr</p>
+                        <p>{totalCost + 49} Kr</p>
                     </div>
                 </div>
                 
