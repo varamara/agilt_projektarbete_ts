@@ -14,6 +14,7 @@ import Pants from "./views/pants/Pants";
 import Shorts from "./views/shorts/Shorts";
 import Jumpsuits from "./views/jumpsuits/Jumpsuits";
 import Kimonos from "./views/kimonos/Kimonos";
+import AllProducts from "./views/allProducts/AllProducts";
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
           <Route path="/shorts" element={<Shorts />} />
           <Route path="/jumpsuits" element={<Jumpsuits />} />
           <Route path="/kimonos" element={<Kimonos />} />
-          <Route path="/products" element={<Products />} />
+          
+          <Route path="/products" element={<AllProducts />} />
           <Route path="/ShoppingCart" element={<ShoppingCart />} />
         </Routes>
       </Router>

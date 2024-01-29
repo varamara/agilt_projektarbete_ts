@@ -40,8 +40,9 @@
     @media (max-width: 1600px) {
         .product-grid {
             grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-            margin: 35px 0px 35px 0px;
+            margin: 35px 0px 200px 0px;
         }
+
     }
 
 
