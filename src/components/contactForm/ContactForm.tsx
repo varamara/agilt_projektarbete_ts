@@ -57,15 +57,15 @@ const ContactForm: React.FC = () => {
             />
           </div>
           
-          <button className="form-button" type="submit">Skicka</button>
+          <button className="form-button" aria-label="Click to submit form" type="submit" title="submit button">Skicka</button>
           
         </form></div>
         <div className="side-container">
-          <h3>info</h3>
-          <p>Konini Agenturer AB <br />
-          Myggvägen 11 <br />
-          136 75 Vendelsö <br />
-          Org. nr.: 556989-6292</p>
+          <h2>info</h2>
+            <p>Konini Agenturer AB <br />
+            Myggvägen 11 <br />
+            136 75 Vendelsö <br />
+            Org. nr.: 556989-6292</p>
           
         </div>
 

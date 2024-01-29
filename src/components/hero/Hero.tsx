@@ -7,10 +7,10 @@ const Hero: React.FC = () => {
     <section className="hero">
       <h1>Prisvärd Kvalité</h1>
       <div className="button-section">
-        <h3>Var vill du börja?</h3>
+        <h2>Var vill du börja?</h2>
         <div>
-          <Button>Favoriter</Button>
-          <BtnOutline className="btn_outline">Kollektion</BtnOutline>
+          <Button aria-label="Open favorites" title="favorites">Favoriter</Button>
+          <BtnOutline className="btn_outline" aria-label="Go to selection" title="selection of clothes">Kollektion</BtnOutline>
         </div>
         
       </div>

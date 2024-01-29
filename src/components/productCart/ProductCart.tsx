@@ -32,7 +32,7 @@ const ProductCart: React.FC = () => {
                 
             </div>
             <div className="product-info">
-                <h2>Kundvagn</h2>
+                <h1>Kundvagn</h1>
                 {cartItems.map((item, index) => (
                 <div className="product-details"  key={index}>
                     <img className="prod-img" src="src\assets\images\nyhero.jpg" alt="product image" />
