@@ -53,10 +53,14 @@
         transform: translateY(60%);
 
         .product-header {
-          margin-top: -10px;
+          margin-top: -15px;
           display: flex;
           justify-content: space-between;
           align-items: center;
+
+          button {
+            background-color: rgba(255, 255, 255, 0);
+          }
 
           h3 {
             font-weight: 600;
@@ -64,13 +68,15 @@
             color: var(--color-8);
           }
 
-          h4 {
+          p {
+            font-size: 0.9rem;
             margin-left: 45px;
             font-weight: 500;
             color: var(--color-8);
           }
 
           .cart-icon {
+            width: 30px;
             color: var(--color-7);
             transition: transform 0.1s ease-in-out;
             cursor: pointer;

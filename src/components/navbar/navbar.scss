@@ -63,6 +63,30 @@
         }
       }
 
+      .cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: none;
+        margin: 5px;
+        margin-top: 12px;
+        height: 30px;
+        width: 50px;
+        background-color: var(--color-6);
+        color: var(--color-2);
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        .cart-link {
+          color: white;
+        }
+      }
+
       #search-magni {
         margin-left: -30px;
         padding-left: 27px;
@@ -149,8 +173,30 @@
         &:hover {
           transform: scale(1.1);
         }
+      }
 
-        //ikonerna hoppar när man hovrar
+      .cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: none;
+        margin: 5px;
+        margin-top: 12px;
+        height: 30px;
+        width: 50px;
+        background-color: var(--color-6);
+        color: var(--color-2);
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        .cart-link {
+          color: white;
+        }
       }
 
       #search-magni {

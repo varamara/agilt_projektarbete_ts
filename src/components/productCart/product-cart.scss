@@ -1,102 +1,94 @@
 .shopping-cart {
+  .product-info {
+    width: 50vw;
+    margin-top: 4rem;
 
-    .product-info {
-        width: 50vw;
-        margin-top: 4rem;
-
-        h1 {
-            margin-right: 5rem;
-            font-size: 1.6rem;
-        }
-
-        .product-details {
-            display: flex;
-            margin-top: 4rem;
-            align-items: center;
-            justify-content: space-between;
-            gap: 50px;
-
-            .prod-img {
-                width: 95px;
-                height: 95px;
-                border-radius: 50%;
-                margin-right: -10rem;
-            }
-            .prod-name {
-                color: black;
-                text-decoration: none;
-
-                &:hover {
-                    transform: scale(1.03);
-                }
-            }
-            .prod-num {
-                display: block;
-                color: rgb(174, 174, 174);
-                opacity: .8;
-            }
-            .add-sub {
-                width: 12px;
-                cursor: pointer;
-                &:hover {
-                    transform: scale(1.2);
-                }
-            }
-            .quantity {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-weight: bold;
-                font-size: 18px;
-                border: 1px solid rgb(174, 174, 174);
-                border-radius: 10px;
-                width: 60px;
-                height: 35px;
-                margin: 0 -10rem;
-            }
-            .product-cost {
-                margin-right: 5rem;
-            }
-            .trash-bin{
-                width: 20px;
-                margin-left: -14rem;
-                margin-right: 28px;
-                cursor: pointer;
-
-                &:hover {
-                    transform: scale(1.2);
-                }
-            }
-        }
-
-        .prod-separator {
-            width: 800px;
-            margin-left: 5.5rem;
-        }
+    h1 {
+      margin-right: 5rem;
+      font-size: 1.6rem;
     }
+
+    .product-details {
+      display: flex;
+      margin-top: 4rem;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+
+      .prod-img {
+        width: 95px;
+        height: 95px;
+        border-radius: 50%;
+        margin-right: -10rem;
+      }
+      .prod-name {
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+          transform: scale(1.03);
+        }
+      }
+      .prod-num {
+        display: block;
+        color: rgb(174, 174, 174);
+        opacity: 0.8;
+      }
+      .add-sub {
+        width: 12px;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      .quantity {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 18px;
+        border: 1px solid rgb(174, 174, 174);
+        border-radius: 10px;
+        width: 60px;
+        height: 35px;
+        margin: 0 -10rem;
+      }
+      .product-cost {
+        margin-right: 5rem;
+      }
+      .trash-bin {
+        width: 20px;
+        margin-left: -14rem;
+        margin-right: 28px;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .prod-separator {
+      width: 800px;
+      margin-left: 5.5rem;
+    }
+  }
 }
 
-
-
 @media screen and (max-width: 1450px) {
-    .shopping-cart {
+  .shopping-cart {
+    .product-details {
+      .prod-name {
+        margin-left: 2em;
+      }
 
-        .product-details {
+      .quantity {
+        margin: 0 -7rem !important;
+      }
 
-            .prod-name {
-                margin-left: 2em;
-            }
-
-            .quantity {
-                margin: 0 -7rem !important;
-            }
-
-            .product-cost {
-            }
-
-            .trash-bin{
-                margin-right: -11rem !important;
-            }
-        } 
+      .trash-bin {
+        margin-right: -11rem !important;
+      }
     }
+  }
 }
