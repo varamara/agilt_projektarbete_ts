@@ -17,7 +17,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products }) => {
         {products.length === 0 ? (
           <p>Loading...</p>
         ) : (
-          products.slice(0, 10).map((product) => (
+          products.slice(0, 12).map((product) => (
             <Link to="/products" key={product.id} className="product-card-link">
               <div key={product.id} className="product-card">
                 <img src={product.image} alt={product.title} />

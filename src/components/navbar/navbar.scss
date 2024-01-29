@@ -97,9 +97,12 @@
     .logo {
       display: flex;
       align-items: center;
-      color: var(--color-8);
-      font-family: var(--font-2);
-      font-size: 2rem;
+
+      h1 {
+        color: var(--color-8);
+        font-family: var(--font-2);
+        font-size: 2rem;
+      }
 
       img {
         width: 80px;

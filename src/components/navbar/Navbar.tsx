@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({ navbarClassName }) => {
   return (
     <section className= {`navbar ${navbarClassName}`}>
       <div className="menu">
-        <button className="menu-burger"><FontAwesomeIcon icon={faBars} style={{color: "#ffffff",}} /></button>
+        <button className="menu-burger" aria-label="Open menu"><FontAwesomeIcon icon={faBars} style={{color: "#ffffff",}} /></button>
         <Link to="/">Hem</Link>
         <Link to="/Terms">Köpvillkor</Link>
         <Link to="/Size">Storleksguide</Link>
@@ -30,13 +30,13 @@ const Navbar: React.FC<NavbarProps> = ({ navbarClassName }) => {
       <div className="search-cart">
         <form action="/sok" method="get">
           <input type="text" name="query" placeholder="Sök här..." />
-          <button id="search-magni" type="submit" title="search">
+          <button id="search-magni" type="submit" title="search" aria-label="Click to submit">
             <FontAwesomeIcon icon={faMagnifyingGlass} className="search-icon" />
           </button>
         </form>
 
         <Link to="/ShoppingCart">
-          <button className="cart" title="cart">
+          <button className="cart" title="cart" aria-label="Add to cart">
             <FontAwesomeIcon icon={faCartShopping} className="cart-icon" />
           </button>
         </Link>
