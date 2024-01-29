@@ -74,3 +74,28 @@
         }
     }
 }
+
+
+
+@media screen and (max-width: 1450px) {
+    .shopping-cart {
+
+        .product-details {
+
+            .prod-name {
+                margin-left: 2em;
+            }
+
+            .quantity {
+                margin: 0 -7rem !important;
+            }
+
+            .product-cost {
+            }
+
+            .trash-bin{
+                margin-right: -11rem !important;
+            }
+        } 
+    }
+}
