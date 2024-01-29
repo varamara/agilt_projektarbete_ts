@@ -1,7 +1,7 @@
 import React from "react"
 import "./card-details.scss"
 import SecondaryBtn from "../../components/buttons/SecondaryBtn"
-import {useShoppingCart} from '../productCart/ProductCartContext'
+import {useShoppingCart} from '../../contexts/ProductCartContext'
 
 const CardDetails: React.FC = () => {
     const { totalCost } = useShoppingCart();
