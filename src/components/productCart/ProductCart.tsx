@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "./product-cart.scss"
-import { useShoppingCart } from '../productCart/ProductCartContext';
+import { useShoppingCart } from '../../contexts/ProductCartContext';
 
 
 const ProductCart: React.FC = () => {
