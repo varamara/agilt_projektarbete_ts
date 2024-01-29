@@ -4,23 +4,19 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  
-  
+
   h1 {
     font-family: var(--font-2);
     font-weight: normal;
     font-size: 64px;
     color: black;
-    
   }
 
   .size-circle {
-    
     border-radius: 0 0 0 100%;
     background-color: var(--color-7);
     height: 400px;
     width: 400px;
-    
   }
 
   .circle-container {
@@ -28,7 +24,6 @@
     display: flex;
     justify-content: flex-end;
   }
-
 
   //size chart starts here:
   .size-chart {
@@ -55,11 +50,27 @@
         font-size: 1.1rem;
       }
 
-      
-
       &:hover {
         box-shadow: 0 4px 8px rgba(124, 124, 124, 0.315);
         transition: 0.2s ease-in-out;
+      }
+    }
+  }
+
+  @media (max-width: 720px) {
+    .size-circle {
+      height: 250px;
+      width: 250px;
+    }
+
+    .size-chart {
+      padding-bottom: 300px;
+
+      table {
+        th,
+        td {
+          padding: 15px;
+        }
       }
     }
   }
