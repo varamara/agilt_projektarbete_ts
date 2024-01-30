@@ -3,4 +3,14 @@
     justify-content: space-around;
     align-items: center;
     height: 120px;
+    flex-wrap: wrap;
+
+    @media (max-width: 720px) {
+        margin-top: 20px;
+        gap: 2px;
+        height: 150px;
+        justify-content: space-evenly;
+        
+        
+    }
 }
