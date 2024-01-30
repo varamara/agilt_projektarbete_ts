@@ -3,7 +3,7 @@ import "./product-grid.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { Product } from "../../types";
-import { useCartOverlay } from "../../contexts/CartOverlayContext"; // Import the hook
+import { useCartOverlay } from "../../contexts/CartOverlayContext";
 
 interface ProductGridProps {
   products: Product[];

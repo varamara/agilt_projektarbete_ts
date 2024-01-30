@@ -1,5 +1,4 @@
 import "./secondary_btn.scss"
-
 import { ButtonHTMLAttributes, FC } from 'react';
 
 
