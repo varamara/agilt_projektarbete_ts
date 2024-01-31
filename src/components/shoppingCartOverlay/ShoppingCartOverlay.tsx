@@ -8,11 +8,9 @@ const ShoppingCartOverlay: React.FC = () => {
   return (
     <div className="shopping-cart-overlay">
       <div className="cart-content">
-        <h2>Kundvagn</h2>
         <ul>
           {cart.map((item) => (
             <li key={item.id}>
-                
               {item.title} - ${item.price}
             </li>
           ))}
