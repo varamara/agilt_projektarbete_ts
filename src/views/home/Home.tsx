@@ -1,4 +1,3 @@
-// Home.tsx
 import React, { useEffect, useState } from "react";
 import "./home.scss";
 import Hero from "../../components/hero/Hero";

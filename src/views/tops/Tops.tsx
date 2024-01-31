@@ -1,4 +1,3 @@
-// Tops.tsx
 import React, { useEffect, useState } from "react";
 import "../../components/productGrid/product-grid.scss";
 import ProductService from "../../services/ProductService";

@@ -1,4 +1,3 @@
-// Kimonos
 import React, { useEffect, useState } from "react";
 import "../../components/productGrid/product-grid.scss";
 import ProductService from "../../services/ProductService";
@@ -14,7 +13,9 @@ const Kimonos: React.FC = () => {
     const fetchProducts = async () => {
       try {
         const data = await productService.getAllProducts();
-        setKimonos(data.filter((product: Product) => product.category === "Kimonos"));
+        setKimonos(
+          data.filter((product: Product) => product.category === "Kimonos")
+        );
       } catch (error) {
         console.error("Error fetching products:", error);
       }

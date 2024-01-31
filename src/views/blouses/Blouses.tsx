@@ -1,4 +1,3 @@
-// Blouses.tsx
 import React, { useEffect, useState } from "react";
 import "./blouses.scss";
 import "../../components/productGrid/product-grid.scss";
@@ -15,7 +14,9 @@ const Blouses: React.FC = () => {
     const fetchProducts = async () => {
       try {
         const data = await productService.getAllProducts();
-        setBlouses(data.filter((product: Product) => product.category === "Blouses"));
+        setBlouses(
+          data.filter((product: Product) => product.category === "Blouses")
+        );
       } catch (error) {
         console.error("Error fetching products:", error);
       }
@@ -29,7 +30,6 @@ const Blouses: React.FC = () => {
         <ProductGrid products={blouses} />
       </section>
     </Products>
-    
   );
 };
 

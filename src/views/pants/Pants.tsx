@@ -1,4 +1,3 @@
-// Pants
 import React, { useEffect, useState } from "react";
 import "../../components/productGrid/product-grid.scss";
 import ProductService from "../../services/ProductService";
@@ -14,7 +13,9 @@ const Pants: React.FC = () => {
     const fetchProducts = async () => {
       try {
         const data = await productService.getAllProducts();
-        setPants(data.filter((product: Product) => product.category === "Pants"));
+        setPants(
+          data.filter((product: Product) => product.category === "Pants")
+        );
       } catch (error) {
         console.error("Error fetching products:", error);
       }

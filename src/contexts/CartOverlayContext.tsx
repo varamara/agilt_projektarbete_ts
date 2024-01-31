@@ -1,13 +1,6 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, ReactNode } from "react";
+import { Product } from "../types";
 
-interface Product {
-    id: number;
-    title: string;
-    price: number;
-    category: string;
-    description: string;
-    image: string;
-}
 
 interface CartContextType {
   cart: Product[];
@@ -15,13 +8,17 @@ interface CartContextType {
   removeFromCart: (productId: number) => void;
 }
 
-const CartOverlayContext = createContext<CartContextType | undefined>(undefined);
+const CartOverlayContext = createContext<CartContextType | undefined>(
+  undefined
+);
 
 interface CartOverlayProviderProps {
   children: ReactNode;
 }
 
-export const CartOverlayProvider: React.FC<CartOverlayProviderProps> = ({ children }) => {
+export const CartOverlayProvider: React.FC<CartOverlayProviderProps> = ({
+  children,
+}) => {
   const [cart, setCart] = useState<Product[]>([]);
 
   const addToCart = (product: Product) => {
@@ -43,7 +40,7 @@ export const CartOverlayProvider: React.FC<CartOverlayProviderProps> = ({ childr
 export const useCartOverlay = () => {
   const context = useContext(CartOverlayContext);
   if (!context) {
-    throw new Error('useCartOverlay must be used within a CartOverlayProvider');
+    throw new Error("useCartOverlay must be used within a CartOverlayProvider");
   }
   return context;
 };

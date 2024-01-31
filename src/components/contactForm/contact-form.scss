@@ -92,31 +92,23 @@
   }
 
   @media (max-width: 1430px) {
+    .contact-form-container {
+      width: 100%;
+      position: relative;
+      margin: 0 0 900px;
 
-      .contact-form-container {
-        width: 100%;
-        position: relative;
-        margin: 0 0 900px;
-
-      .side-container{
-          h2{
-            margin-right: 40px;
-            
-          }
-
-          p {
-            margin-right: 130px;
-          }
-        }       
+      .side-container {
+        h2 {
+          margin-right: 40px;
         }
-   
 
-      
+        p {
+          margin-right: 130px;
+        }
+      }
+    }
 
-
-      // side container mobile view 
-
-    
+    // side container mobile view
   }
 
   @media (max-width: 720px) {
@@ -125,7 +117,6 @@
       width: 100%;
       position: relative;
       margin: 0 0 900px;
-   
 
       .form-content {
         h1 {
@@ -146,7 +137,6 @@
       .side-container {
         width: 100%;
         margin-right: 0;
-        
 
         width: 100%;
         height: 100%;
@@ -155,7 +145,6 @@
         clip-path: none;
         border: 25px solid var(--color-7);
         margin-top: 30px;
-        
 
         h2 {
           font-family: var(--font-2);
